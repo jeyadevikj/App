@@ -1,0 +1,19 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./graphQl-frontend
+      dockerfile: Dockerfile
+    image: projmgnt_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_BACKEND_URL: http://localhost:8081
+
+  backend:
+    build:
+      context: ./graphQl-backend
+      dockerfile: Dockerfile
+    image: projmgnt_backend
+    ports:
+      - "8081:8081"
