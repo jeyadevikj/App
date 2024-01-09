@@ -13,4 +13,8 @@ before_script:
   - npm run dev &
 
 script:
+<<<<<<< HEAD
   - npm run test
+=======
+  - npm run test
+>>>>>>> 45ae829 (Add or update package-lock.json file)
